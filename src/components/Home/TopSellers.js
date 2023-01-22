@@ -37,7 +37,9 @@ export default function TopSellers() {
         <Heading color="#fff" fontSize="30px">
           Top Sellers
         </Heading>
-        <Link href="/Trends">view all</Link>
+        <Link href="/Trends" color="#fff">
+          view all
+        </Link>
       </Flex>
       <Box h="100%" w="100%" mt="40px">
         <Grid

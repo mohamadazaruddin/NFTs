@@ -47,8 +47,10 @@ const SocialButton = ({ children, label, href }) => {
 export default function LargeWithAppLinksAndSocial() {
   return (
     <Box
-      bg={useColorModeValue("gray.50", "gray.900")}
-      color={useColorModeValue("gray.700", "gray.200")}
+      // bg={useColorModeValue("gray.50", "gray.900")}
+      bgColor="#110229"
+      // color={useColorModeValue("gray.700", "gray.200")}
+      color="gray.200"
     >
       <Container as={Stack} maxW={"8xl"} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>

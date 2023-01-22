@@ -12,9 +12,11 @@ import { Show, Hide } from "@chakra-ui/react";
 export default function Navbar() {
   return (
     <Box bgColor="#091027">
-      <Show above="sm">
-        <Box>This text appears at the "sm" value screen width or greater.</Box>
-      </Show>
+      <Box display={{ base: "block", md: "none" }}>
+        <Box color={"#fff"}>
+          This text appears at the "sm" value screen width or greater.
+        </Box>
+      </Box>
       <Hide below="md">
         <Flex p="10px 0px" justifyContent="space-between" alignItems="center">
           <Box color="#ffffff">

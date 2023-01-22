@@ -37,7 +37,7 @@ export default function Works() {
       >
         <Box
           w={{ base: "100%", md: "40%" }}
-          pr="40px"
+          pr={{ base: "0", md: "40px" }}
           textAlign={{ base: "center", md: "start" }}
         >
           <Heading color="#fff" fontSize="30px">
@@ -61,7 +61,12 @@ export default function Works() {
         <Box w={{ base: "100%", md: "60%" }} mt={{ base: "25px", md: "0" }}>
           <Grid templateColumns="repeat(2, 1fr)" gap={6}>
             {workData.map((data, i) => (
-              <GridItem key={i} w="100%" p="15px" border="1px solid #8b00e745">
+              <GridItem
+                key={i}
+                w="100%"
+                p={{ base: "10px", md: "15px" }}
+                border="1px solid #8b00e745"
+              >
                 <Box>
                   <Box
                     color="#c3d7e9a6"
@@ -74,10 +79,18 @@ export default function Works() {
                   >
                     {data.icon}
                   </Box>
-                  <Heading color="#fff" fontSize="18px" mt="15px">
+                  <Heading
+                    color="#fff"
+                    fontSize={{ base: "16px", md: "18px" }}
+                    mt="15px"
+                  >
                     {data.head}
                   </Heading>
-                  <Text color="#828080" fontSize="12px" mt="8px">
+                  <Text
+                    color="#828080"
+                    fontSize={{ base: "10px", md: "12px" }}
+                    mt="8px"
+                  >
                     {data.title}
                   </Text>
                 </Box>
